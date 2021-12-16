@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Air Pollution Indicator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <div class="root">
+        <h1 class="heading">Air Pollution Indicator</h1>
+
+        <div class="location-container">
+           <h2 class="sub-heading">Your Location</h2>
+           <label for="error-msg" style="color:red;"></label> <br>
+           <input type="number" name="lat" class="loc-input" placeholder="latitude" step="0.0001" id="latitude">
+           <input type="number" name="lat" class="loc-input" placeholder="Longitude" step="0.0001" id="longitude">
+           <button class="search-btn">Search</button>
+        
+        </div>
+        <div class="air-info">
+            <h2 class="sub-heading">Air Quality Index : </h2>
+            <span class="air-quality">...</span>
+            <span class="arr">&nbsp;&rarr;&nbsp;</span>
+            <span class="air-quality-status">...</span>
+
+            <div class="component-container"> 
+                <h2 class="sub-heading">Concentration of Pollutants in air :</h2>
+                <div>
+                    <h3 class="component-names">Carbon Monoxide</h3>
+                    <span class="component-val" data-comp="co"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Nitrogen Monoxide</h3>
+                    <span class="component-val" data-comp="no"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Nitrogen Dioxide</h3>
+                    <span class="component-val" data-comp="n02"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Ozone</h3>
+                    <span class="component-val" data-comp="03"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Sulphur Dioxide</h3>
+                    <span class="component-val" data-comp="so2"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Fine particles matter</h3>
+                    <span class="component-val" data-comp="pm2_5"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Coarse Particle Matter</h3>
+                    <span class="component-val" data-comp="pm10"></span>
+                </div>
+                <div>
+                    <h3 class="component-names">Ammonia</h3>
+                    <span class="component-val" data-comp="nh3"></span>
+                </div>
+            </div>
+
+        </div>
+      
+      </div>
+
+      <script src="index.js" defer></script>
+   
+</body>
+</html>
