@@ -7,7 +7,7 @@ This site is live at:  [AirPollutionIndicator](https://rono516.github.io/AirPoll
 This is a simple implementation of OpenWeather API to show the air quality index based on the users current location
 Uses HTML and JavaScript for this implementation
 
-Access OpenWeather API at [OpenWeather](https://openweathermap.org/api/air-pollution)
+Access [OpenWeather Air Pollution API](https://openweathermap.org/api/air-pollution)
 
 Shows: Concentration of Pollutants in air :
 + Carbon Monoxide
